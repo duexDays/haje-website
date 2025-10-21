@@ -1,0 +1,13 @@
+{
+    "name": "haje-website",
+    "version": "1.0.0",
+    "description": "HAJE - AI-Powered Clothing Repair & Customization Website",
+    "main": "index.html",
+    "scripts": {
+      "build": "echo 'Static website - no build required'",
+      "build:azure": "echo 'Static website - no build required'"
+    },
+    "keywords": ["AI", "clothing", "repair", "upcycling", "fashion"],
+    "author": "HAJE Team",
+    "license": "MIT"
+  }

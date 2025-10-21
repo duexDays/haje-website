@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haje - AI-Powered Clothing Repair & Customization</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="script/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo_text_no_bg.png" alt="Haje" class="logo-icon" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Our Solution</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-overlay">
+          <h1>Revive. Rewear. Raon</h1>
+          <p class="hero-highlight">HAJE</p>
+          <p>
+            the AI-powered platform that makes repairing and upcycling clothes
+            as easy as buying new.
+          </p>
+          <p>
+            From your idea to a visual preview to a completed order — all
+            happens in one smooth, intelligent flow.
+          </p>
+        </div>
+        <div class="hero-bottom-cta">
+          <button
+            class="cta demo-btn"
+            onclick="window.open('https://youtu.be/G9DIiDXRm_o', '_blank')"
+          >
+            Watch Demo
+          </button>
+          <button class="cta" onclick="showComingSoon()">Get started</button>
+        </div>
+        <div class="hero-videos">
+          <video class="hero-video" autoplay muted loop>
+            <source src="video/main_1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="about-container">
+          <div class="about-image">
+            <img src="./images/about.png" alt="AI-powered clothing repair" />
+          </div>
+          <div class="about-text-content">
+            <h2 class="about-title">REVIVE. REWEAR. RAON</h2>
+            <div class="vision-section">
+              <h3 class="section-heading">
+                To make repair and upcycling as convenient as buying new
+              </h3>
+              <p class="section-text"></p>
+            </div>
+            <div class="mission-section">
+              <h3 class="section-heading"></h3>
+              <p class="section-text">
+                Every garment has memories woven into it. When it tears, you
+                don't have to let go. With haje, you can breathe new life into
+                the pieces you love. Just share a photo and your story
+                <br /><br />
+                our AI will imagine what comes next. See it come to life through
+                a realistic visual preview. Connect with artisans who transform
+                your vision into reality. No matter the language you speak, haje
+                makes understanding effortless. Because repair isn't just about
+                clothes — it's about care, connection, and continuing a story.
+              </p>
+            </div>
+            <div class="mission-section">
+              <h3 class="section-heading">
+                haje — Revive what you love. Rewear with purpose. Rediscover
+                joy.
+              </h3>
+              <p class="section-text"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="content">
+        <h2>Our Solution</h2>
+        <p class="services-subtitle">
+          Connecting customers, artisans, and brands through AI conversation
+        </p>
+        <div class="services-container">
+          <div class="services-left">
+            <div class="service-section">
+              <h3 class="service-heading">Artisans</h3>
+              <ul class="service-list">
+                <li>Smart matching & verified network</li>
+                <li>Auto translation & review dashboard</li>
+                <li>Consistent digital income</li>
+              </ul>
+            </div>
+            <div class="service-section">
+              <h3 class="service-heading">AI</h3>
+              <ul class="service-list">
+                <li>Interprets natural-language requests</li>
+                <li>Creates AI-powered visual previews for upcycling ideas</li>
+                <li>Recommends fabric reuse options for brands</li>
+              </ul>
+            </div>
+            <div class="service-section mobile-only">
+              <h3 class="service-heading">Customers</h3>
+              <ul class="service-list">
+                <li>Convenient order creation by AI</li>
+                <li>Visual preview, Pick-up & Delivery</li>
+                <li>Real-time chat & Support</li>
+              </ul>
+            </div>
+            <div class="service-section mobile-only">
+              <h3 class="service-heading">Brands</h3>
+              <ul class="service-list">
+                <li>Revive unused inventory & fabrics</li>
+                <li>Launch limited upcycled collections</li>
+                <li>ESG tracking & CO₂ reporting</li>
+              </ul>
+            </div>
+          </div>
+          <div class="services-center">
+            <div class="services-image">
+              <img src="./images/services.png" alt="Services" />
+            </div>
+          </div>
+          <div class="services-right">
+            <div class="service-section">
+              <h3 class="service-heading">Customers</h3>
+              <ul class="service-list">
+                <li>Convenient order creation by AI</li>
+                <li>Visual preview, Pick-up & Delivery</li>
+                <li>Real-time chat & Support</li>
+              </ul>
+            </div>
+            <div class="service-section">
+              <h3 class="service-heading">Brands</h3>
+              <ul class="service-list">
+                <li>Revive unused inventory & fabrics</li>
+                <li>Launch limited upcycled collections</li>
+                <li>ESG tracking & CO₂ reporting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="content">
+        <h2>How It Works</h2>
+        <p class="how-it-works-subtitle">
+          Our AI platform turns a simple prompt into a complete repair journey -
+          analyzing, visualizing, matching, and delivering through one
+          continuous flow
+        </p>
+        <div class="how-it-works-container">
+          <div class="step-box">
+            <div class="step-number">1</div>
+            <div class="step-visual">
+              <img
+                src="images/howto1.png"
+                alt="Prompt Input"
+                class="step-icon"
+              />
+            </div>
+            <h3 class="step-title">Prompt / Template Input</h3>
+            <p class="step-description">
+              Start with natural language requests for clothing alterations and
+              customizations.
+            </p>
+          </div>
+
+          <div class="step-box">
+            <div class="step-number">2</div>
+            <div class="step-visual">
+              <img
+                src="images/howto2.png"
+                alt="AI Diagnosis"
+                class="step-icon"
+              />
+            </div>
+            <h3 class="step-title">AI Diagnosis</h3>
+            <p class="step-description">
+              Our AI analyzes your request and determines the best approach for
+              your item.
+            </p>
+          </div>
+
+          <div class="step-box">
+            <div class="step-number">3</div>
+            <div class="step-visual">
+              <img
+                src="images/howto3.png"
+                alt="Visual Preview"
+                class="step-icon"
+              />
+            </div>
+            <h3 class="step-title">Visual Preview</h3>
+            <p class="step-description">
+              See exactly how your item will look after the alteration with
+              AI-generated previews.
+            </p>
+          </div>
+
+          <div class="step-box">
+            <div class="step-number">4</div>
+            <div class="step-visual">
+              <img
+                src="images/howto4.png"
+                alt="Cost Estimation"
+                class="step-icon"
+              />
+            </div>
+            <h3 class="step-title">Smart Cost Estimation</h3>
+            <p class="step-description">
+              Get instant, accurate pricing and delivery time estimates for your
+              project.
+            </p>
+          </div>
+
+          <div class="step-box">
+            <div class="step-number">5</div>
+            <div class="step-visual">
+              <img
+                src="images/howto5.png"
+                alt="Artisan Matching"
+                class="step-icon"
+              />
+            </div>
+            <h3 class="step-title">Verified Artisan Matching</h3>
+            <p class="step-description">
+              Connect with skilled local artisans who specialize in your type of
+              alteration.
+            </p>
+          </div>
+
+          <div class="step-box">
+            <div class="step-number">6</div>
+            <div class="step-visual">
+              <img
+                src="images/howto6.png"
+                alt="Pickup & Tracking"
+                class="step-icon"
+              />
+            </div>
+            <h3 class="step-title">Door-to-Door Pickup & Tracking</h3>
+            <p class="step-description">
+              Convenient pickup and delivery with real-time tracking throughout
+              the process.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 HAJE INC. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script/script.js"></script>
+  </body>
+</html>

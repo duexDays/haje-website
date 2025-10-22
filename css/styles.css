@@ -365,6 +365,7 @@ nav ul li a.active {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  min-height: 100vh;
   height: 100vh;
   background: linear-gradient(135deg, var(--haje-card-background) 0%, var(--haje-background) 100%);
   padding: calc(var(--header-height) + 20px) 5% 20px 5%;
@@ -1931,6 +1932,132 @@ section + section {
   
   .step-description {
     font-size: 0.8rem;
+  }
+}
+
+/* iPad Air 최적화 */
+@media (min-width: 820px) and (max-width: 833px) and (max-height: 1200px) {
+  .about-section {
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+  }
+  
+  .about-container {
+    padding: 15px;
+    height: 100%;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .section-heading {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  
+  .section-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .vision-section,
+  .mission-section {
+    margin-bottom: 15px;
+  }
+}
+
+/* iPad Pro 최적화 */
+@media (min-width: 834px) and (max-width: 1024px) and (max-height: 1400px) {
+  .about-section {
+    height: 100vh;
+    min-height: 100vh;
+  }
+  
+  .about-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .section-heading {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .section-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .vision-section,
+  .mission-section {
+    margin-bottom: 20px;
+  }
+  
+  #services {
+    height: 100vh;
+    min-height: 100vh;
+    padding: calc(var(--header-height) + 10px) 5% 10px 5%;
+  }
+  
+  .services-container {
+    height: calc(100vh - var(--header-height) - 20px);
+    max-height: calc(100vh - var(--header-height) - 20px);
+    gap: 8px;
+  }
+  
+  #services h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    margin-top: 5px;
+  }
+  
+  .services-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  
+  .service-section {
+    padding: 6px !important;
+  }
+  
+  .service-heading {
+    font-size: 1rem !important;
+    margin-bottom: 4px !important;
+  }
+  
+  .service-list li {
+    font-size: 0.9rem !important;
+    margin-bottom: 2px !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* 1920x1200 해상도 최적화 */
+@media (min-width: 1920px) and (max-height: 1200px) {
+  #services {
+    height: 100vh;
+    min-height: 100vh;
+    padding: calc(var(--header-height) + 15px) 5% 15px 5%;
+  }
+  
+  .services-container {
+    height: calc(100vh - var(--header-height) - 30px);
+    max-height: calc(100vh - var(--header-height) - 30px);
+  }
+  
+  #services h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  
+  .services-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
   }
 }
 

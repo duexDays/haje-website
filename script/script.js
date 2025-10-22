@@ -645,14 +645,25 @@ function initializeScrollSnap() {
         const isScrollingDown = deltaY > 0;
         const isScrollingUp = deltaY < 0;
         
-        // Find current section
+        // Find current section with improved visibility detection
         let currentSectionIndex = -1;
+        let maxVisibleRatio = 0;
+        
         scrollableElements.forEach((element, index) => {
             const elementTop = element.offsetTop - headerHeight;
             const elementBottom = elementTop + element.offsetHeight;
+            const elementHeight = element.offsetHeight;
             
-            if (currentScroll >= elementTop && currentScroll < elementBottom) {
+            // Calculate visible portion of the element
+            const visibleTop = Math.max(currentScroll, elementTop);
+            const visibleBottom = Math.min(currentScroll + windowHeight, elementBottom);
+            const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+            const visibleRatio = visibleHeight / elementHeight;
+            
+            // If element is at least 30% visible, consider it as current section
+            if (visibleRatio > 0.3 && visibleRatio > maxVisibleRatio) {
                 currentSectionIndex = index;
+                maxVisibleRatio = visibleRatio;
             }
         });
         
@@ -714,14 +725,25 @@ function initializeScrollSnap() {
             const currentScroll = window.pageYOffset;
             const windowHeight = window.innerHeight;
             
-            // Find current section
+            // Find current section with improved visibility detection
             let currentSectionIndex = -1;
+            let maxVisibleRatio = 0;
+            
             scrollableElements.forEach((element, index) => {
                 const elementTop = element.offsetTop - headerHeight;
                 const elementBottom = elementTop + element.offsetHeight;
+                const elementHeight = element.offsetHeight;
                 
-                if (currentScroll >= elementTop && currentScroll < elementBottom) {
+                // Calculate visible portion of the element
+                const visibleTop = Math.max(currentScroll, elementTop);
+                const visibleBottom = Math.min(currentScroll + windowHeight, elementBottom);
+                const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+                const visibleRatio = visibleHeight / elementHeight;
+                
+                // If element is at least 30% visible, consider it as current section
+                if (visibleRatio > 0.3 && visibleRatio > maxVisibleRatio) {
                     currentSectionIndex = index;
+                    maxVisibleRatio = visibleRatio;
                 }
             });
             
@@ -764,14 +786,25 @@ function initializeScrollSnap() {
         if (isScrolling) return;
         
         const currentScroll = window.pageYOffset;
+        const windowHeight = window.innerHeight;
         let currentSectionIndex = -1;
+        let maxVisibleRatio = 0;
         
         scrollableElements.forEach((element, index) => {
             const elementTop = element.offsetTop - headerHeight;
             const elementBottom = elementTop + element.offsetHeight;
+            const elementHeight = element.offsetHeight;
             
-            if (currentScroll >= elementTop && currentScroll < elementBottom) {
+            // Calculate visible portion of the element
+            const visibleTop = Math.max(currentScroll, elementTop);
+            const visibleBottom = Math.min(currentScroll + windowHeight, elementBottom);
+            const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+            const visibleRatio = visibleHeight / elementHeight;
+            
+            // If element is at least 30% visible, consider it as current section
+            if (visibleRatio > 0.3 && visibleRatio > maxVisibleRatio) {
                 currentSectionIndex = index;
+                maxVisibleRatio = visibleRatio;
             }
         });
         
